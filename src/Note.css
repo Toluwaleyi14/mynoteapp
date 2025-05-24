@@ -1,0 +1,88 @@
+body {
+margin: 0;
+font-family: Arial, sans-serif; 
+background: color #f2f2f2;
+}
+
+.app {
+max-width: 600px;
+margin: 40px auto;
+padding: 20px; background: white;
+border-radius: 8px;
+box-shadow: 4px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.note-form { display: flex; width: 100%; gap: 10px; margin-bottom: 20px; flex-direction: column;}
+
+.note-form input {
+flex: 1; 
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+.note-form button {
+padding: 10px 20px;
+background-color: #2e7dff;
+color: white;
+border: none;
+border-radius: 4px; 
+cursor: pointer;
+}
+
+.note{
+    padding-left: 10px;
+ }
+.note-form button:hover {
+    background-color:#1a5fd3;
+}
+
+.search-input { 
+    width: 97%; 
+    padding: 10px; 
+    margin-bottom: 20px; 
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.notes-container {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 15px;
+}
+
+.note {
+position: relative;
+background-color:#fef9c3;
+padding: 15px;
+border-radius: 6px;
+min-height: 80px;
+box-shadow: 0 2px 5px rgba (0,0,0,0.05);
+}
+
+.note p {
+margin: 0;
+word-wrap: break-word;
+}
+
+.delete-btn {
+position: absolute;
+top: 6px;
+right: 10px; 
+background: none; 
+border: none;
+font-size: 18px;
+color: #e60000;
+cursor: pointer;
+}
+
+.empty {
+text-align: center;
+color: gray;
+grid-column: 1/ -1;
+}
